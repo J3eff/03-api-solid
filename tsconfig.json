@@ -31,6 +31,7 @@
         "./src/*"
       ]
     }, /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "ignoreDeprecations": "6.0", /* Silences deprecation warnings for options deprecated in upcoming TypeScript 7.0 */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
     // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */
