@@ -1,0 +1,21 @@
+name: Run Unit Tests
+
+on: [push] #Dispara o workflow em cada push
+
+jobs:
+  run-unit-tests:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest #Define o ambiente de execução
+
+    steps:
+      - uses: actions/checkout@v3 #Baixa o código
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18 #Define a versão do Node.js
+          cache: 'npm' #Habilita o cache do npm
+      
+      - run: npm ci  
+      - run: npm run test
+
+      
